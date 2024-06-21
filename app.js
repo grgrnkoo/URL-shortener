@@ -91,9 +91,9 @@ form.addEventListener('submit', async (e) => {
       errorMessage.textContent = 'Too many requests or wrong request!';
     }
 
-    if (linkField.childElementCount > 11) {  // Checks if there is more than 10 child elements(11 with form) and deletes last one
-      const lastElement = linkField.lastChild;
-      linkField.removeChild(lastElement);
+    if (links.childElementCount > 10) {  // Checks if there is more than 10 child elements(11 with form) and deletes last one
+      const lastElement = links.lastChild;
+      links.removeChild(lastElement);
     }
   }
 })

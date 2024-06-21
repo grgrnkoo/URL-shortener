@@ -8,6 +8,8 @@ window.addEventListener('resize', (e) => {
 
 const menuMobileDesktop = (width) => {
     width > 768 ? menu.classList.replace('mobile', 'desktop') : menu.classList.replace('desktop', 'mobile');
+    
+    width > 768 ? menu.classList.remove('hidden') : menu.classList.add('hidden');
 
     if (width < 432) {
         menu.style.width = `${width - 32}px`;
