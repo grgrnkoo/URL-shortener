@@ -45,18 +45,21 @@
   <div class="statistics">
     <div class="linkfield">
       <form action="">
-        <input type="text" name="link" id="link" placeholder="Shorten a link here..." class="error">
+        <input type="text" name="url" id="url" placeholder="Shorten a link here..." class="">
         <button type="submit" class="square">Shorten It!</button>
-        <span class="error" id="errormessage">Please add a link</span>
+        <span class="hidden error" id="errormessage">Wrong format or empty string</span>
       </form>
-      <div class="link">
+      <div class="links">
+        
+      </div>
+      <!-- <div class="link">
         <div class="linkinner">
           <p class="oldlink">some https://</p>
           <div class="line"></div>
           <p class="newlink">rel.co/mvkermc</p>
         </div>
         <button>copy</button>
-      </div>
+      </div> -->
     </div>
     <h2>Advanced Statistics</h2>
 
